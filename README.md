@@ -16,8 +16,8 @@ Done-for-you AI agent + website setup for local service businesses in Ontario / 
 ## Primary CTA
 Book a free automation audit.
 
-## Important placeholder
-The main CTA currently links to `#` in the contact section. Replace it with your real booking link before publishing.
+## Contact CTA
+The main CTA opens a mailto link to mukeshkumarkella@gmail.com with the subject line prefilled for a free automation audit.
 
 ## Preview locally
 From this folder, run:
