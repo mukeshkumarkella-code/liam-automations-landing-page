@@ -1,6 +1,6 @@
-# Liam Automations Landing Page
+# Liam AI Automations Landing Page
 
-This is a static, conversion-focused landing page built from `personal_brand_creation_workbook.md` for Liam Automations, with messaging aimed at Ontario trades, consultants, and SMBs.
+This is a static, conversion-focused landing page built from `personal_brand_creation_workbook.md` for Liam AI Automations, with messaging aimed at Canadian small businesses.
 
 ## What’s included
 - `index.html` — landing page copy and structure
@@ -11,7 +11,7 @@ This is a static, conversion-focused landing page built from `personal_brand_cre
 - `/home/mukesh/workspace/personal-brand/personal_brand_creation_workbook.md`
 
 ## Primary offer
-Done-for-you AI agent + website setup for local service businesses in Ontario / Canada.
+Done-for-you AI agent + website setup for Canadian small businesses.
 
 ## Primary CTA
 Book a free automation audit.
