@@ -11,80 +11,125 @@
   <meta property="og:description" content="Custom AI agents, lead follow-up automation, AI receptionist systems, and practical AI consulting for Toronto small businesses." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://liam-automations-landing-page.vercel.app/" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="https://liam-automations-landing-page.vercel.app/og-image.svg" />
+  <meta property="og:image:alt" content="Liam AI Automations - AI automation for Toronto small businesses" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://liam-automations-landing-page.vercel.app/og-image.svg" />
+  <meta name="twitter:image:alt" content="Liam AI Automations - AI automation for Toronto small businesses" />
   <meta name="theme-color" content="#050b14" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
-  <script type="application/ld+json">
+  <script id="business-entity-schema" type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Liam AI Automations",
-  "areaServed": ["Toronto", "GTA", "Mississauga", "Brampton", "Vaughan", "Markham", "North York", "Scarborough", "Etobicoke", "Oakville", "Burlington"],
-  "description": "AI automation, AI agents, and practical AI consulting for Toronto and GTA small businesses.",
-  "url": "https://liam-automations-landing-page.vercel.app",
-  "email": "mukeshkumarkella@gmail.com",
-  "sameAs": ["https://github.com/mukeshkumarkella-code"]
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "ProfessionalService"
+      ],
+      "@id": "https://liam-automations-landing-page.vercel.app/#business",
+      "name": "Liam AI Automations",
+      "url": "https://liam-automations-landing-page.vercel.app/",
+      "email": "mukeshkumarkella@gmail.com",
+      "areaServed": [
+        "Toronto",
+        "GTA",
+        "Mississauga",
+        "Brampton",
+        "Vaughan",
+        "Markham",
+        "North York",
+        "Scarborough",
+        "Etobicoke",
+        "Oakville",
+        "Burlington"
+      ],
+      "description": "AI automation, AI agents, and practical AI consulting for Toronto and GTA small businesses.",
+      "sameAs": [
+        "https://github.com/mukeshkumarkella-code",
+        "https://www.linkedin.com/in/mukesh-kumar-kella-83b03b2a2"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://liam-automations-landing-page.vercel.app/#founder",
+      "name": "Mukesh Kumar Kella",
+      "url": "https://www.linkedin.com/in/mukesh-kumar-kella-83b03b2a2",
+      "worksFor": {
+        "@id": "https://liam-automations-landing-page.vercel.app/#business"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://liam-automations-landing-page.vercel.app/#website",
+      "name": "Liam AI Automations",
+      "url": "https://liam-automations-landing-page.vercel.app/",
+      "publisher": {
+        "@id": "https://liam-automations-landing-page.vercel.app/#business"
+      }
+    }
+  ]
 }
 </script>
-  <script id="org-person-website-schema" type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://liam-automations-landing-page.vercel.app/#organization",
-        "name": "Liam AI Automations",
-        "url": "https://liam-automations-landing-page.vercel.app/",
-        "email": "mukeshkumarkella@gmail.com",
-        "areaServed": [
-          "Toronto",
-          "GTA",
-          "Mississauga",
-          "Brampton",
-          "Vaughan",
-          "Markham",
-          "North York",
-          "Scarborough",
-          "Etobicoke",
-          "Oakville",
-          "Burlington"
-        ],
-        "sameAs": [
-          "https://github.com/mukeshkumarkella-code"
-        ]
-      },
-      {
-        "@type": "Person",
-        "@id": "https://liam-automations-landing-page.vercel.app/#founder",
-        "name": "Mukesh Kumar Kella",
-        "url": "https://www.linkedin.com/in/mukesh-kumar-kella-83b03b2a2",
-        "worksFor": {
-          "@id": "https://liam-automations-landing-page.vercel.app/#organization"
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://liam-automations-landing-page.vercel.app/#website",
-        "name": "Liam AI Automations",
-        "url": "https://liam-automations-landing-page.vercel.app/",
-        "publisher": {
-          "@id": "https://liam-automations-landing-page.vercel.app/#organization"
-        }
+<script id="faq-page-schema" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can AI agents help small businesses get more leads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI agents can capture inquiries, answer common questions, qualify prospects, trigger follow-up, and help move interested people toward a booked appointment."
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI automate lead follow-up and appointment booking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AI workflows can send instant replies, reminders, routing messages, intake questions, and booking prompts. The exact setup depends on your website, calendar, CRM, and current process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need AI consulting or a custom AI agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If you are unsure what to automate, start with consulting and an audit. If the workflow is already clear, a custom AI agent or automation build may be the faster path."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI connect with my website, CRM, email, or calendar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In many cases, yes. The audit reviews your current tools and identifies the safest, simplest integrations to start with."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this suitable for local service businesses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The strategy is built around practical use cases for small service businesses that rely on fast response, customer inquiries, follow-up, and booked appointments."
+      }
+    }
+  ]
+}
+</script>
 <script id="contact-page-schema" type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ContactPage",
-  "name": "Book a Free AI Automation Audit",
+  "@id": "https://liam-automations-landing-page.vercel.app/#contact-page",
+  "name": "Request a Free AI Automation Audit",
   "url": "https://liam-automations-landing-page.vercel.app/#contact",
   "description": "Request a free AI automation audit for a Toronto or GTA small business.",
   "mainEntity": {
-    "@type": "Organization",
-    "@id": "https://liam-automations-landing-page.vercel.app/#organization"
+    "@id": "https://liam-automations-landing-page.vercel.app/#business"
   }
 }
 </script>
@@ -102,7 +147,7 @@
       <a href="index.html#industries">Industries</a>
       <a href="index.html#locations">Locations</a>
       <a href="index.html#faq">FAQ</a>
-      <a class="button button-small" href="#contact">Book free audit</a>
+      <a class="button button-small" href="#contact">Request free audit</a>
     </nav>
   </div>
 </header>
@@ -113,7 +158,7 @@
         <p class="eyebrow">AI automation agency in Toronto for small businesses</p>
         <h1>AI Automation for Toronto Small Businesses</h1>
         <p class="lead">Liam AI Automations helps Toronto and GTA small businesses capture more leads, respond faster, automate follow-up, and book more appointments with custom AI agents, workflow automation, and practical AI consulting.</p>
-        <div class="cta-row"><a class="button" href="#contact">Book a Free AI Automation Audit</a><a class="button button-secondary" href="#services">Explore services</a></div>
+        <div class="cta-row"><a class="button" href="#contact">Request a Free AI Automation Audit</a><a class="button button-secondary" href="#services">Explore services</a></div>
         <ul class="trust-list"><li>Built for local service businesses, clinics, consultants, contractors, real estate, and professional services</li><li>Focused on lead capture, instant replies, appointment booking, and admin automation</li><li>Practical AI systems without technical jargon or inflated promises</li></ul>
       </div>
       <aside class="hero-panel" aria-label="Liam AI Automations service summary">
@@ -154,12 +199,16 @@
   <section class="section section-alt" id="contact">
     <div class="container narrow contact-card contact-form-card">
       <p class="section-kicker">Free AI automation audit</p>
-      <h2>Book a Free AI Automation Audit</h2>
+      <h2>Request a Free AI Automation Audit</h2>
       <p class="contact-intro">Share a few details about your business, lead flow, and automation goals. This helps Liam AI Automations identify where you can capture more leads, respond faster, and reduce manual work first.</p>
-      <form class="lead-form" id="audit-form" action="mailto:mukeshkumarkella@gmail.com" method="post" enctype="text/plain">
+      <form class="lead-form" id="audit-form" action="https://formsubmit.co/mukeshkumarkella@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Liam AI Automations audit request" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="true" />
+        <input type="hidden" name="_next" value="https://liam-automations-landing-page.vercel.app/#contact" />
         <div class="form-grid">
           <label for="full-name">Full name <span aria-hidden="true">*</span><input id="full-name" name="Full name" type="text" autocomplete="name" required /></label>
-          <label for="phone">Phone number <span aria-hidden="true">*</span><input id="phone" name="Phone number" type="tel" autocomplete="tel" required /></label>
+          <label for="phone">Phone number<input id="phone" name="Phone number" type="tel" autocomplete="tel" /></label>
           <label for="email">Email address <span aria-hidden="true">*</span><input id="email" name="Email address" type="email" autocomplete="email" required /></label>
           <label for="company">Company name <span aria-hidden="true">*</span><input id="company" name="Company name" type="text" autocomplete="organization" required /></label>
           <label for="website">Website URL<input id="website" name="Website URL" type="url" autocomplete="url" placeholder="https://example.com" /></label>
@@ -170,9 +219,10 @@
         <label for="current-process">What is your current lead or admin process?<textarea id="current-process" name="Current lead or admin process" rows="4" placeholder="Example: website form goes to email, manual follow-up, booking by phone..."></textarea></label>
         <label for="main-problem">Biggest problem you want to fix <span aria-hidden="true">*</span><textarea id="main-problem" name="Biggest problem" rows="4" placeholder="Example: missed calls, slow response time, manual follow-up, too much admin work..." required></textarea></label>
         <label for="timeline">When do you want to improve this?<select id="timeline" name="Timeline"><option>As soon as possible</option><option>This month</option><option>Next 1–3 months</option><option>Just researching</option></select></label>
-        <label class="consent"><input id="consent" name="Consent" type="checkbox" required /> I agree to be contacted by Liam AI Automations about my free AI automation audit.</label>
-        <p class="form-note">When you submit, your email app will open with the audit request pre-filled. Review it and send the email to complete the request.</p>
-        <div class="cta-row"><button class="button" type="submit">Send Audit Request</button><a class="button button-secondary" href="ai-automation-services-toronto.html">Review services first</a></div>
+        <label for="contact-preference">Preferred contact method<select id="contact-preference" name="Preferred contact method"><option>Email</option><option>Phone</option><option>Email first, then phone</option></select></label>
+        <label class="consent"><input id="consent" name="Consent" type="checkbox" required /> I agree to be contacted by Liam AI Automations about my free AI automation audit. I understand my information will only be used to respond to this request. See the <a href="privacy.html">privacy policy</a>.</label>
+        <p class="form-note">When you submit, your request will be sent securely through the form endpoint. If the form service asks for a one-time email confirmation, complete it once so future leads are delivered automatically.</p>
+        <div class="cta-row"><button class="button" type="submit">Request Audit</button><a class="button button-secondary" href="ai-automation-services-toronto.html">Review services first</a></div>
       </form>
     </div>
   </section>
@@ -180,7 +230,7 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <p>© 2026 Liam AI Automations. AI automation for Toronto and GTA small businesses.</p>
-    <p><a href="index.html#contact">Book a Free AI Automation Audit</a></p>
+    <p><a href="index.html#contact">Request a Free AI Automation Audit</a></p>
   </div>
 </footer>
 <script id="mobile-nav-script">
@@ -191,38 +241,6 @@
       const isOpen = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!isOpen));
       nav.classList.toggle('is-open', !isOpen);
-    });
-  }
-
-  const auditForm = document.querySelector('#audit-form');
-  if (auditForm) {
-    auditForm.addEventListener('submit', (event) => {
-      event.preventDefault();
-      if (!auditForm.reportValidity()) return;
-      const data = new FormData(auditForm);
-      const lines = [
-        'Free AI Automation Audit Request',
-        '',
-        `Full name: ${data.get('Full name') || ''}`,
-        `Phone number: ${data.get('Phone number') || ''}`,
-        `Email address: ${data.get('Email address') || ''}`,
-        `Company name: ${data.get('Company name') || ''}`,
-        `Website URL: ${data.get('Website URL') || ''}`,
-        `City or service area: ${data.get('City or service area') || ''}`,
-        `Business type: ${data.get('Business type') || ''}`,
-        `Automation interest: ${data.get('Automation interest') || ''}`,
-        `Timeline: ${data.get('Timeline') || ''}`,
-        '',
-        `Current lead or admin process: ${data.get('Current lead or admin process') || ''}`,
-        '',
-        `Biggest problem: ${data.get('Biggest problem') || ''}`,
-        '',
-        'Consent: Yes, I agree to be contacted about my free AI automation audit.'
-      ];
-      const subject = encodeURIComponent(`Free AI Automation Audit - ${data.get('Company name') || data.get('Full name')}`);
-      const body = encodeURIComponent(lines.join('
-'));
-      window.location.href = `mailto:mukeshkumarkella@gmail.com?subject=${subject}&body=${body}`;
     });
   }
 </script>

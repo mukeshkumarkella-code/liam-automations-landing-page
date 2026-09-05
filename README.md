@@ -18,9 +18,9 @@ Liam AI Automations helps Toronto and GTA small businesses capture more leads, r
 - `ai-training-small-business-toronto.html` — service page targeting `AI training for small businesses Toronto`
 
 ## Primary CTA
-Book a Free AI Automation Audit.
+Request a Free AI Automation Audit.
 
-The primary CTA now sends visitors to the homepage audit form. The form collects name, phone, email, company name, website, location, business type, automation interest, current process, biggest problem, timeline, and consent. It currently opens a pre-filled email to `mukeshkumarkella@gmail.com` on submit; replace this with a backend form endpoint or calendar/CRM integration when available.
+The primary CTA sends visitors to the homepage audit form. The form collects name, optional phone, email, company name, website, location, business type, automation interest, current process, biggest problem, timeline, contact preference, and consent. It submits to FormSubmit for email delivery; connect a CRM, Google Sheet, or booking platform later if desired.
 
 ## Local preview
 ```bash

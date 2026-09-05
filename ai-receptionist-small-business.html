@@ -11,116 +11,145 @@
   <meta property="og:description" content="AI receptionist systems for small businesses to handle customer inquiries, missed calls, intake, routing, and appointment requests." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://liam-automations-landing-page.vercel.app/ai-receptionist-small-business.html" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content="https://liam-automations-landing-page.vercel.app/og-image.svg" />
+  <meta property="og:image:alt" content="Liam AI Automations - AI automation for Toronto small businesses" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://liam-automations-landing-page.vercel.app/og-image.svg" />
+  <meta name="twitter:image:alt" content="Liam AI Automations - AI automation for Toronto small businesses" />
   <meta name="theme-color" content="#050b14" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
-  <script type="application/ld+json">
+  <script id="business-entity-schema" type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Liam AI Automations",
-  "areaServed": ["Toronto", "GTA", "Mississauga", "Brampton", "Vaughan", "Markham", "North York", "Scarborough", "Etobicoke", "Oakville", "Burlington"],
-  "description": "AI automation, AI agents, and practical AI consulting for Toronto and GTA small businesses.",
-  "url": "https://liam-automations-landing-page.vercel.app",
-  "email": "mukeshkumarkella@gmail.com",
-  "sameAs": ["https://github.com/mukeshkumarkella-code"]
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "ProfessionalService"
+      ],
+      "@id": "https://liam-automations-landing-page.vercel.app/#business",
+      "name": "Liam AI Automations",
+      "url": "https://liam-automations-landing-page.vercel.app/",
+      "email": "mukeshkumarkella@gmail.com",
+      "areaServed": [
+        "Toronto",
+        "GTA",
+        "Mississauga",
+        "Brampton",
+        "Vaughan",
+        "Markham",
+        "North York",
+        "Scarborough",
+        "Etobicoke",
+        "Oakville",
+        "Burlington"
+      ],
+      "description": "AI automation, AI agents, and practical AI consulting for Toronto and GTA small businesses.",
+      "sameAs": [
+        "https://github.com/mukeshkumarkella-code",
+        "https://www.linkedin.com/in/mukesh-kumar-kella-83b03b2a2"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://liam-automations-landing-page.vercel.app/#founder",
+      "name": "Mukesh Kumar Kella",
+      "url": "https://www.linkedin.com/in/mukesh-kumar-kella-83b03b2a2",
+      "worksFor": {
+        "@id": "https://liam-automations-landing-page.vercel.app/#business"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://liam-automations-landing-page.vercel.app/#website",
+      "name": "Liam AI Automations",
+      "url": "https://liam-automations-landing-page.vercel.app/",
+      "publisher": {
+        "@id": "https://liam-automations-landing-page.vercel.app/#business"
+      }
+    }
+  ]
 }
 </script>
-  <script id="org-person-website-schema" type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://liam-automations-landing-page.vercel.app/#organization",
-        "name": "Liam AI Automations",
-        "url": "https://liam-automations-landing-page.vercel.app/",
-        "email": "mukeshkumarkella@gmail.com",
-        "areaServed": [
-          "Toronto",
-          "GTA",
-          "Mississauga",
-          "Brampton",
-          "Vaughan",
-          "Markham",
-          "North York",
-          "Scarborough",
-          "Etobicoke",
-          "Oakville",
-          "Burlington"
-        ],
-        "sameAs": [
-          "https://github.com/mukeshkumarkella-code"
-        ]
-      },
-      {
-        "@type": "Person",
-        "@id": "https://liam-automations-landing-page.vercel.app/#founder",
-        "name": "Mukesh Kumar Kella",
-        "url": "https://www.linkedin.com/in/mukesh-kumar-kella-83b03b2a2",
-        "worksFor": {
-          "@id": "https://liam-automations-landing-page.vercel.app/#organization"
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://liam-automations-landing-page.vercel.app/#website",
-        "name": "Liam AI Automations",
-        "url": "https://liam-automations-landing-page.vercel.app/",
-        "publisher": {
-          "@id": "https://liam-automations-landing-page.vercel.app/#organization"
-        }
+<script id="faq-page-schema" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Will an AI receptionist answer every question?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It should handle common questions and collect details, then route complex or sensitive issues to a human."
       }
-    ]
-  }
-  </script>
-  <script id="breadcrumb-schema" type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://liam-automations-landing-page.vercel.app/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "AI Receptionist for Small Businesses",
-        "item": "https://liam-automations-landing-page.vercel.app/ai-receptionist-small-business.html"
-      }
-    ]
-  }
-  </script>
-  <script id="service-schema" type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "AI Receptionist for Small Businesses",
-    "description": "AI receptionist workflows for small businesses that handle customer inquiries, missed calls, intake, routing, and appointment requests.",
-    "provider": {
-      "@id": "https://liam-automations-landing-page.vercel.app/#organization"
     },
-    "areaServed": [
-      "Toronto",
-      "GTA",
-      "Mississauga",
-      "Brampton",
-      "Vaughan",
-      "Markham",
-      "North York",
-      "Scarborough",
-      "Etobicoke",
-      "Oakville",
-      "Burlington"
-    ],
-    "serviceType": "AI Receptionist for Small Businesses",
-    "url": "https://liam-automations-landing-page.vercel.app/ai-receptionist-small-business.html"
-  }
-  </script>
+    {
+      "@type": "Question",
+      "name": "Can this work after hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, after-hours inquiry capture and follow-up is one of the strongest use cases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this good for clinics or contractors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Clinics, wellness businesses, contractors, and home service companies are high-fit use cases."
+      }
+    }
+  ]
+}
+</script>
+<script id="breadcrumb-schema" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://liam-automations-landing-page.vercel.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AI Receptionist for Small Businesses",
+      "item": "https://liam-automations-landing-page.vercel.app/ai-receptionist-small-business.html"
+    }
+  ]
+}
+</script>
+<script id="service-schema" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "AI Receptionist for Small Businesses",
+  "description": "AI receptionist workflows for small businesses that handle customer inquiries, missed calls, intake, routing, and appointment requests.",
+  "provider": {
+    "@id": "https://liam-automations-landing-page.vercel.app/#business"
+  },
+  "areaServed": [
+    "Toronto",
+    "GTA",
+    "Mississauga",
+    "Brampton",
+    "Vaughan",
+    "Markham",
+    "North York",
+    "Scarborough",
+    "Etobicoke",
+    "Oakville",
+    "Burlington"
+  ],
+  "serviceType": "AI Receptionist for Small Businesses",
+  "url": "https://liam-automations-landing-page.vercel.app/ai-receptionist-small-business.html"
+}
+</script>
 </head>
 <body>
 <header class="site-header">
@@ -135,22 +164,22 @@
       <a href="index.html#industries">Industries</a>
       <a href="index.html#locations">Locations</a>
       <a href="index.html#faq">FAQ</a>
-      <a class="button button-small" href="index.html#contact">Book free audit</a>
+      <a class="button button-small" href="index.html#contact">Request free audit</a>
     </nav>
   </div>
 </header>
 <main>
   <div class="container"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>AI Receptionist for Small Businesses</span></nav></div>
-<section class="hero section"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow">AI receptionist workflows for faster customer response</p><h1>AI Receptionist for Small Businesses</h1><p class="lead">An AI receptionist can help small businesses reduce missed inquiries, answer common questions, collect intake details, and route appointment requests without adding more manual admin.</p><div class="cta-row"><a class="button" href="index.html#contact">Book a Free AI Automation Audit</a><a class="button button-secondary" href="index.html#services">See all services</a></div></div><aside class="hero-panel"><div class="panel-card panel-card-accent"><span class="panel-label">Best first step</span><strong>Audit the workflow first</strong><p>Before building, Liam AI Automations identifies the fastest, safest automation opportunity for your business.</p></div></aside></div></section>
+<section class="hero section"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow">AI receptionist workflows for faster customer response</p><h1>AI Receptionist for Small Businesses</h1><p class="lead">An AI receptionist can help small businesses reduce missed inquiries, answer common questions, collect intake details, and route appointment requests without adding more manual admin.</p><div class="cta-row"><a class="button" href="index.html#contact">Request a Free AI Automation Audit</a><a class="button button-secondary" href="index.html#services">See all services</a></div></div><aside class="hero-panel"><div class="panel-card panel-card-accent"><span class="panel-label">Best first step</span><strong>Audit the workflow first</strong><p>Before building, Liam AI Automations identifies the fastest, safest automation opportunity for your business.</p></div></aside></div></section>
 <section class="section section-alt"><div class="container narrow"><p class="section-kicker">What this includes</p><h2>Practical automation focused on measurable business outcomes.</h2><div class="card-grid three-up"><article class="info-card"><h3>Customer inquiries</h3><p>Answer repeated questions and collect important details before handoff.</p></article><article class="info-card"><h3>Missed-call workflows</h3><p>Create a process for responding to people who called when the team was busy.</p></article><article class="info-card"><h3>Appointment requests</h3><p>Help route customers toward the right booking step or next conversation.</p></article></div></div></section>
 <section class="section"><div class="container narrow"><p class="section-kicker">Use cases</p><h2>Where this helps</h2><ul class="check-list"><li>Clinics and wellness: Support intake and booking workflows for appointment-based businesses.</li><li>Contractors and home services: Capture quote requests, job details, service areas, and urgency.</li><li>Professional services: Collect initial inquiry details and route prospects to the right next step.</li></ul></div></section>
 <section class="section section-alt"><div class="container narrow"><p class="section-kicker">FAQ</p><h2>Questions small businesses ask about this service</h2><div class="faq-list"><details><summary>Will an AI receptionist answer every question?</summary><p>No. It should handle common questions and collect details, then route complex or sensitive issues to a human.</p></details><details><summary>Can this work after hours?</summary><p>Yes, after-hours inquiry capture and follow-up is one of the strongest use cases.</p></details><details><summary>Is this good for clinics or contractors?</summary><p>Yes. Clinics, wellness businesses, contractors, and home service companies are high-fit use cases.</p></details></div></div></section>
-<section class="section"><div class="container narrow contact-card"><p class="section-kicker">Next step</p><h2>Find out what to automate first.</h2><p>Use the audit request form on the homepage to share your workflow, lead sources, and automation goals.</p><div class="cta-row"><a class="button" href="index.html#contact">Book a Free AI Automation Audit</a><a class="button button-secondary" href="index.html">Back to homepage</a></div></div></section>
+<section class="section"><div class="container narrow contact-card"><p class="section-kicker">Next step</p><h2>Find out what to automate first.</h2><p>Use the audit request form on the homepage to share your workflow, lead sources, and automation goals.</p><div class="cta-row"><a class="button" href="index.html#contact">Request a Free AI Automation Audit</a><a class="button button-secondary" href="index.html">Back to homepage</a></div></div></section>
 </main>
 <footer class="site-footer">
   <div class="container footer-inner">
     <p>© 2026 Liam AI Automations. AI automation for Toronto and GTA small businesses.</p>
-    <p><a href="index.html#contact">Book a Free AI Automation Audit</a></p>
+    <p><a href="index.html#contact">Request a Free AI Automation Audit</a></p>
   </div>
 </footer>
 <script id="mobile-nav-script">
