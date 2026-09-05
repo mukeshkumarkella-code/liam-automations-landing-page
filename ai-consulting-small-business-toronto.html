@@ -27,6 +27,100 @@
   "sameAs": ["https://github.com/mukeshkumarkella-code"]
 }
 </script>
+  <script id="org-person-website-schema" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://liam-automations-landing-page.vercel.app/#organization",
+        "name": "Liam AI Automations",
+        "url": "https://liam-automations-landing-page.vercel.app/",
+        "email": "mukeshkumarkella@gmail.com",
+        "areaServed": [
+          "Toronto",
+          "GTA",
+          "Mississauga",
+          "Brampton",
+          "Vaughan",
+          "Markham",
+          "North York",
+          "Scarborough",
+          "Etobicoke",
+          "Oakville",
+          "Burlington"
+        ],
+        "sameAs": [
+          "https://github.com/mukeshkumarkella-code"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://liam-automations-landing-page.vercel.app/#founder",
+        "name": "Mukesh Kumar Kella",
+        "url": "https://www.linkedin.com/in/mukesh-kumar-kella-83b03b2a2",
+        "worksFor": {
+          "@id": "https://liam-automations-landing-page.vercel.app/#organization"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://liam-automations-landing-page.vercel.app/#website",
+        "name": "Liam AI Automations",
+        "url": "https://liam-automations-landing-page.vercel.app/",
+        "publisher": {
+          "@id": "https://liam-automations-landing-page.vercel.app/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+  <script id="breadcrumb-schema" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://liam-automations-landing-page.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "AI Consulting for Small Businesses Toronto",
+        "item": "https://liam-automations-landing-page.vercel.app/ai-consulting-small-business-toronto.html"
+      }
+    ]
+  }
+  </script>
+  <script id="service-schema" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AI Consulting for Small Businesses Toronto",
+    "description": "Practical AI consulting and automation roadmap services for Toronto and GTA small businesses.",
+    "provider": {
+      "@id": "https://liam-automations-landing-page.vercel.app/#organization"
+    },
+    "areaServed": [
+      "Toronto",
+      "GTA",
+      "Mississauga",
+      "Brampton",
+      "Vaughan",
+      "Markham",
+      "North York",
+      "Scarborough",
+      "Etobicoke",
+      "Oakville",
+      "Burlington"
+    ],
+    "serviceType": "AI Consulting for Small Businesses Toronto",
+    "url": "https://liam-automations-landing-page.vercel.app/ai-consulting-small-business-toronto.html"
+  }
+  </script>
 </head>
 <body>
 <header class="site-header">
@@ -35,7 +129,8 @@
       <span class="brand-mark">LAA</span>
       <span class="brand-text"><strong>Liam AI Automations</strong><small>Capture. Reply. Book.</small></span>
     </a>
-    <nav class="nav-links" aria-label="Primary navigation">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+    <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
       <a href="index.html#services">Services</a>
       <a href="index.html#industries">Industries</a>
       <a href="index.html#locations">Locations</a>
@@ -45,6 +140,7 @@
   </div>
 </header>
 <main>
+  <div class="container"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>AI Consulting for Small Businesses Toronto</span></nav></div>
 <section class="hero section"><div class="container hero-grid"><div class="hero-copy"><p class="eyebrow">Practical AI consulting, not vague AI advice</p><h1>AI Consulting for Small Businesses in Toronto</h1><p class="lead">Get a clear AI automation roadmap that shows what to automate first, what tools to use, and how to reduce manual work without creating unnecessary complexity.</p><div class="cta-row"><a class="button" href="mailto:mukeshkumarkella@gmail.com?subject=Book%20a%20Free%20AI%20Automation%20Audit">Book a Free AI Automation Audit</a><a class="button button-secondary" href="index.html#services">See all services</a></div></div><aside class="hero-panel"><div class="panel-card panel-card-accent"><span class="panel-label">Best first step</span><strong>Audit the workflow first</strong><p>Before building, Liam AI Automations identifies the fastest, safest automation opportunity for your business.</p></div></aside></div></section>
 <section class="section section-alt"><div class="container narrow"><p class="section-kicker">What this includes</p><h2>Practical automation focused on measurable business outcomes.</h2><div class="card-grid three-up"><article class="info-card"><h3>AI-readiness audit</h3><p>Review your current lead flow, admin work, tools, risks, and automation opportunities.</p></article><article class="info-card"><h3>Automation roadmap</h3><p>Prioritize use cases by business value, speed-to-value, and implementation effort.</p></article><article class="info-card"><h3>Implementation planning</h3><p>Define the right AI agents, workflows, integrations, and handoff process before building.</p></article></div></div></section>
 <section class="section"><div class="container narrow"><p class="section-kicker">Use cases</p><h2>Where this helps</h2><ul class="check-list"><li>Business process review: Find bottlenecks in inquiries, follow-up, booking, customer service, and admin.</li><li>Tool selection: Choose practical AI and automation tools based on your workflow, not hype.</li><li>Team training direction: Identify where staff need guidance to use AI safely and consistently.</li></ul></div></section>
@@ -57,5 +153,16 @@
     <p><a href="index.html#contact">Book a Free AI Automation Audit</a></p>
   </div>
 </footer>
+<script id="mobile-nav-script">
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav-links');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+      nav.classList.toggle('is-open', !isOpen);
+    });
+  }
+</script>
 </body>
 </html>
