@@ -20,7 +20,7 @@ Liam AI Automations helps Toronto and GTA small businesses capture more leads, r
 ## Primary CTA
 Book a Free AI Automation Audit.
 
-The CTA currently opens a mailto link to `mukeshkumarkella@gmail.com`. Replace it with a calendar or booking URL when available.
+The primary CTA now sends visitors to the homepage audit form. The form collects name, phone, email, company name, website, location, business type, automation interest, current process, biggest problem, timeline, and consent. It currently opens a pre-filled email to `mukeshkumarkella@gmail.com` on submit; replace this with a backend form endpoint or calendar/CRM integration when available.
 
 ## Local preview
 ```bash

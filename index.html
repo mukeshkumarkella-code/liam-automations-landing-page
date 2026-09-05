@@ -75,6 +75,19 @@
     ]
   }
   </script>
+<script id="contact-page-schema" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Book a Free AI Automation Audit",
+  "url": "https://liam-automations-landing-page.vercel.app/#contact",
+  "description": "Request a free AI automation audit for a Toronto or GTA small business.",
+  "mainEntity": {
+    "@type": "Organization",
+    "@id": "https://liam-automations-landing-page.vercel.app/#organization"
+  }
+}
+</script>
 </head>
 <body>
 <header class="site-header">
@@ -89,7 +102,7 @@
       <a href="index.html#industries">Industries</a>
       <a href="index.html#locations">Locations</a>
       <a href="index.html#faq">FAQ</a>
-      <a class="button button-small" href="mailto:mukeshkumarkella@gmail.com?subject=Book%20a%20Free%20AI%20Automation%20Audit">Book free audit</a>
+      <a class="button button-small" href="#contact">Book free audit</a>
     </nav>
   </div>
 </header>
@@ -100,7 +113,7 @@
         <p class="eyebrow">AI automation agency in Toronto for small businesses</p>
         <h1>AI Automation for Toronto Small Businesses</h1>
         <p class="lead">Liam AI Automations helps Toronto and GTA small businesses capture more leads, respond faster, automate follow-up, and book more appointments with custom AI agents, workflow automation, and practical AI consulting.</p>
-        <div class="cta-row"><a class="button" href="mailto:mukeshkumarkella@gmail.com?subject=Book%20a%20Free%20AI%20Automation%20Audit">Book a Free AI Automation Audit</a><a class="button button-secondary" href="#services">Explore services</a></div>
+        <div class="cta-row"><a class="button" href="#contact">Book a Free AI Automation Audit</a><a class="button button-secondary" href="#services">Explore services</a></div>
         <ul class="trust-list"><li>Built for local service businesses, clinics, consultants, contractors, real estate, and professional services</li><li>Focused on lead capture, instant replies, appointment booking, and admin automation</li><li>Practical AI systems without technical jargon or inflated promises</li></ul>
       </div>
       <aside class="hero-panel" aria-label="Liam AI Automations service summary">
@@ -138,7 +151,31 @@
     <details><summary>Is this suitable for local service businesses?</summary><p>Yes. The strategy is built around practical use cases for small service businesses that rely on fast response, customer inquiries, follow-up, and booked appointments.</p></details>
   </div></div></section>
 
-  <section class="section section-alt" id="contact"><div class="container narrow contact-card"><p class="section-kicker">Next step</p><h2>Book a Free AI Automation Audit</h2><p>Find out where AI can help your business capture more leads, respond faster, and reduce manual work first.</p><div class="cta-row"><a class="button" href="mailto:mukeshkumarkella@gmail.com?subject=Book%20a%20Free%20AI%20Automation%20Audit">Book a Free AI Automation Audit</a><a class="button button-secondary" href="ai-automation-services-toronto.html">Start with services</a></div></div></section>
+  <section class="section section-alt" id="contact">
+    <div class="container narrow contact-card contact-form-card">
+      <p class="section-kicker">Free AI automation audit</p>
+      <h2>Book a Free AI Automation Audit</h2>
+      <p class="contact-intro">Share a few details about your business, lead flow, and automation goals. This helps Liam AI Automations identify where you can capture more leads, respond faster, and reduce manual work first.</p>
+      <form class="lead-form" id="audit-form" action="mailto:mukeshkumarkella@gmail.com" method="post" enctype="text/plain">
+        <div class="form-grid">
+          <label for="full-name">Full name <span aria-hidden="true">*</span><input id="full-name" name="Full name" type="text" autocomplete="name" required /></label>
+          <label for="phone">Phone number <span aria-hidden="true">*</span><input id="phone" name="Phone number" type="tel" autocomplete="tel" required /></label>
+          <label for="email">Email address <span aria-hidden="true">*</span><input id="email" name="Email address" type="email" autocomplete="email" required /></label>
+          <label for="company">Company name <span aria-hidden="true">*</span><input id="company" name="Company name" type="text" autocomplete="organization" required /></label>
+          <label for="website">Website URL<input id="website" name="Website URL" type="url" autocomplete="url" placeholder="https://example.com" /></label>
+          <label for="location">City / service area<input id="location" name="City or service area" type="text" autocomplete="address-level2" placeholder="Toronto, Mississauga, Brampton..." /></label>
+          <label for="business-type">Business type<select id="business-type" name="Business type"><option value="">Select one</option><option>Local service business</option><option>Clinic or wellness business</option><option>Contractor or home services</option><option>Real estate or mortgage</option><option>Coach or consultant</option><option>Professional services</option><option>Agency</option><option>Other</option></select></label>
+          <label for="interest">What do you want help with? <span aria-hidden="true">*</span><select id="interest" name="Automation interest" required><option value="">Select one</option><option>AI lead follow-up automation</option><option>AI appointment booking system</option><option>AI receptionist</option><option>AI agents for lead capture</option><option>AI consulting / automation roadmap</option><option>AI training for my team</option><option>Not sure — help me choose</option></select></label>
+        </div>
+        <label for="current-process">What is your current lead or admin process?<textarea id="current-process" name="Current lead or admin process" rows="4" placeholder="Example: website form goes to email, manual follow-up, booking by phone..."></textarea></label>
+        <label for="main-problem">Biggest problem you want to fix <span aria-hidden="true">*</span><textarea id="main-problem" name="Biggest problem" rows="4" placeholder="Example: missed calls, slow response time, manual follow-up, too much admin work..." required></textarea></label>
+        <label for="timeline">When do you want to improve this?<select id="timeline" name="Timeline"><option>As soon as possible</option><option>This month</option><option>Next 1–3 months</option><option>Just researching</option></select></label>
+        <label class="consent"><input id="consent" name="Consent" type="checkbox" required /> I agree to be contacted by Liam AI Automations about my free AI automation audit.</label>
+        <p class="form-note">When you submit, your email app will open with the audit request pre-filled. Review it and send the email to complete the request.</p>
+        <div class="cta-row"><button class="button" type="submit">Send Audit Request</button><a class="button button-secondary" href="ai-automation-services-toronto.html">Review services first</a></div>
+      </form>
+    </div>
+  </section>
 </main>
 <footer class="site-footer">
   <div class="container footer-inner">
@@ -154,6 +191,38 @@
       const isOpen = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!isOpen));
       nav.classList.toggle('is-open', !isOpen);
+    });
+  }
+
+  const auditForm = document.querySelector('#audit-form');
+  if (auditForm) {
+    auditForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!auditForm.reportValidity()) return;
+      const data = new FormData(auditForm);
+      const lines = [
+        'Free AI Automation Audit Request',
+        '',
+        `Full name: ${data.get('Full name') || ''}`,
+        `Phone number: ${data.get('Phone number') || ''}`,
+        `Email address: ${data.get('Email address') || ''}`,
+        `Company name: ${data.get('Company name') || ''}`,
+        `Website URL: ${data.get('Website URL') || ''}`,
+        `City or service area: ${data.get('City or service area') || ''}`,
+        `Business type: ${data.get('Business type') || ''}`,
+        `Automation interest: ${data.get('Automation interest') || ''}`,
+        `Timeline: ${data.get('Timeline') || ''}`,
+        '',
+        `Current lead or admin process: ${data.get('Current lead or admin process') || ''}`,
+        '',
+        `Biggest problem: ${data.get('Biggest problem') || ''}`,
+        '',
+        'Consent: Yes, I agree to be contacted about my free AI automation audit.'
+      ];
+      const subject = encodeURIComponent(`Free AI Automation Audit - ${data.get('Company name') || data.get('Full name')}`);
+      const body = encodeURIComponent(lines.join('
+'));
+      window.location.href = `mailto:mukeshkumarkella@gmail.com?subject=${subject}&body=${body}`;
     });
   }
 </script>
