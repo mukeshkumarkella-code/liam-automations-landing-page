@@ -1,39 +1,36 @@
-# Liam AI Automations Landing Page
+# Liam AI Automations SEO Website
 
-This is a static, conversion-focused landing page built from `personal_brand_creation_workbook.md` for Liam AI Automations, with messaging aimed at Canadian small businesses.
+Static SEO/AEO-ready website for Liam AI Automations, focused on AI automation for Toronto and GTA small businesses.
 
-## What’s included
-- `index.html` — landing page copy and structure
-- `styles.css` — responsive styling
-- `README.md` — setup and usage notes
+## Source documents
+- `/home/mukesh/workspace/marketingskills/liam_ai_automations_seo_keywords.md`
+- `/home/mukesh/workspace/marketingskills/liam_ai_seo_aeo_ai_authority_strategy.md`
 
-## Source used
-- `/home/mukesh/workspace/personal-brand/personal_brand_creation_workbook.md`
+## Primary positioning
+Liam AI Automations helps Toronto and GTA small businesses capture more leads, respond faster, and book more appointments with custom AI agents, workflow automation, and practical AI consulting.
 
-## Primary offer
-Done-for-you AI agent + website setup for Canadian small businesses.
+## Pages
+- `index.html` — homepage targeting `AI automation agency Toronto`
+- `ai-automation-services-toronto.html` — service page targeting `AI automation services Toronto`
+- `ai-consulting-small-business-toronto.html` — service page targeting `AI consultant for small business Toronto`
+- `ai-agents-lead-capture-appointment-booking.html` — service page targeting `AI agents for small business Toronto`
+- `ai-receptionist-small-business.html` — service page targeting `AI receptionist for small business`
+- `ai-training-small-business-toronto.html` — service page targeting `AI training for small businesses Toronto`
 
 ## Primary CTA
-Book a free automation audit.
+Book a Free AI Automation Audit.
 
-## Contact CTA
-The main CTA opens a mailto link to mukeshkumarkella@gmail.com with the subject line prefilled for a free automation audit.
+The CTA currently opens a mailto link to `mukeshkumarkella@gmail.com`. Replace it with a calendar or booking URL when available.
 
-## Preview locally
-From this folder, run:
-
+## Local preview
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open:
+Open `http://localhost:8000`.
 
-```text
-http://localhost:8000
-```
-
-## Suggested next steps
-1. Replace the CTA placeholder with your booking page or calendar link.
-2. Add any real testimonials, logos, or case studies if you have them.
-3. Connect the contact section to your preferred form or scheduling tool.
-4. Deploy to GitHub/Vercel when ready.
+## SEO/AEO notes
+- Homepage title: `AI Automation Agency Toronto | AI Agents for Small Businesses`
+- Homepage H1: `AI Automation for Toronto Small Businesses`
+- Includes clear buyer questions, FAQ content, local GTA coverage, service pages, and LocalBusiness schema.
+- Does not use fake testimonials, fake client logos, fake results, or fake scarcity.
