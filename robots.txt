@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://liam-automations-landing-page.vercel.app/sitemap.xml
+Sitemap: https://liamaiautomations.com/sitemap.xml
